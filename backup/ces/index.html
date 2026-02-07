@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="no-bm">
+<head>
+    <meta charset="UTF-8">
+    <title>Fjellseterløpet</title>
+    <link type="text/css" rel="stylesheet" href="style.css?1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="fsl-header">
+        <nav class="flex-start">
+            <a href="#home"><img src="img/logo.png" alt="NTNUI Friidrett" width="192px"></a>
+        </nav>
+            <nav class="flex-end">
+            <a><img onClick=goHome() src="img/flags/no.svg" width="48px"/></a>
+            <a href="#splash"><img src="img/flags/gb.svg" width="48px"/></a>
+        </nav>
+        <div class="flex-center grid-span-two">
+            <nav class=" space-between limited-width">
+                <a href="#sponsors">Sponsorer</a>
+                <a href="#info">Informasjon</a>
+                <a href="#route">Ruten</a>
+                <a href="#history">Historie</a>
+                <a href="#results">Resultater</a>
+            </nav>
+
+        </div>
+    </div>
+    <main>
+        <section id="home">
+            <div class="flex-bottom border-box simple-padding">
+                <img class="limited-width border-box simple-padding" src="img/logo.png">
+            </div>
+            <div class="flex-center">
+                <div class="flex-center simple-padding flex-column-gaps">
+                    <h1 class="text-very-big no-margins">Bli med 30. April 2022!</h1>
+                    <div class="timeDisplayContainer">
+                        <div class="timeDisplayElement" id="daysDisplay"></div>
+                        <div class="timeDisplayElement" id="hoursDisplay"></div>
+                        <div class="timeDisplayElement" id="minutesDisplay"></div>
+                        <div class="timeDisplayElement" id="secondsDisplay"></div>
+                    </div>
+                    <a class="full-width" href="https://signup.eqtiming.com/?Event=fjellseter">
+                        <button class="full-width">Påmelding<br><span style="font-size: 0.75em">Earlybird priser fram til INSERT_DATE!</span></button>
+                    </a>
+                </div>
+
+            </div>
+            <div class="flex-bottom">
+                <img class="limited-width"  src="img/background.svg"/>
+            </div>
+        </section>
+        <section id="sponsors" class="flex-center">
+            <h1>Sponsorer</h1>
+            <p>Informasjon om sponsorer kommer snart!</p>
+        </section>
+        <section id="info" class="flex-center">
+            <div class="limited-width full-width">
+                <h1>Priser</h1>
+                <div class="simple-margin background-white simple-padding bold flex-center">
+                    <table class="full-width">
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td>Barn</td>
+                                <td>Student</td>
+                                <td>Vanlig</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Earlybird Pris
+                                </td>
+                                <td>
+                                    100,-
+                                </td>
+
+                                <td>
+                                    150,-
+                                </td>
+                                <td>
+                                    250,-
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Vanlig Pris
+                                </td>
+                                <td>
+                                    INSERT_PRIS
+                                </td>
+
+                                <td>
+                                    INSERT_PRIS
+                                </td>
+                                <td>
+                                    INSERT_PRIS
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                </div>
+            </div> 
+            <div class="limited-width">
+                <h1>Praktisk Info</h1>
+                <div class="simple-margin background-white simple-padding bold" style="text-align: start;">
+                    <h2>Start</h2>
+                    <p>Startskuddet går klokken INSERT_KLOKKESLETT den 30. April 2022. Møt opp INSERT_KLOKKESLETT.</p>
+                    <h2>Henting av startnummer</h2>
+                    <p>Henting av startnummer kan gjøres INSERT_DATO INSERT_KLOKKESLETT ved INSERT_LOKASJON. Det kan også hentes fra klokken INSERT_KLOKKESLETT på løpsdagen 30. April 2022</p>
+                    <h2>Resultater</h2>
+                    <p>Resultater vil bli tilgjenngelig på denne nettsiden så raskt som mulig etter fullført løp.</p>
+                    <h2>Andre spørsmål</h2>
+                    <p>For svar på andre spørsmål ta kontakt på mail INSERT_MAIL_ADRESSE</p>
+                    <h1>Ting som har vært med tidligere</h1>
+                    <h2>Etterpåmelding</h2>
+                    <p>Info om etterpåmelding</p>
+                    <h2>Bagasje</h2>
+                    <p>Info om bagasje</p>
+                    <h2>Transport etter løpet</h2>
+                    <p>Info om transport</p>
+                    <h2>Premier</h2>
+                    <p>Info om premier</p>
+                </div>
+            </div> 
+        </section>
+        <section id="route" class="grid-two-split">
+            <div class="flex-center full-width">
+                <iframe class="flex-grow disable-google-zoom" src="https://mapsengine.google.com/map/u/0/embed?mid=zeXmig_5Tm48.k5rQSchmkOkg" width="100%" frameborder="0" style="border:0"></iframe>
+            </div>
+            <div class ="flex-center">
+                <div class="limited-width">
+                    <h1>Ruten</h1>
+                    <div class="simple-margin background-white simple-padding bold">
+                        <p>Fra start på gangvegen ved Lerkendal går løypa over Stavnebrua, deretter under jernbanelinja og noen meter langs Osloveien. Traseen tar så opp til venstre langs Mørlenda, under trikkelinja, gjennom rundkjøringa på Breidablikk og videre opp Breidablikkveien til Byåsen butikksenter. Derfra går løypa langs Fjellseterveien til målpassering ved Skistua. Løypa er 8,1 km lang og total stigning er rundt 420 meter.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="history" class="flex-center">
+
+                <div class="limited-width">
+                    <h1>Løpets historie</h1>
+                    <div class="simple-margin background-white simple-padding bold">
+                        <p>Løpet fra Lerkendal til Skistua har opprinnelig navnet Sigmonds Staup. Dette løpet har vært en tradisjon blant studentene i en årrekke, og blir fremdeles i en uformell form holdt i etterkant av NTNUIs generalforsamlinger. I 1987 ble Fjellseterløpet etablert som en oppfølger til det originale Staup, men med start ved Marienborg på vestsida av Nidelva. Distansen på 8,1 km var imidlertid den samme. Etter at Stavnebrua ble utvidet ble startstedet i 1996 flyttet til Lerkendal, på østsida av Nidelva, slik det er for Staup.</p>
+                    </div>
+                </div> 
+
+        </section>
+        <section id="results" class="flex-center">
+            <h1>Resultater</h1>
+        </section>
+    </main>
+    <div id="fsl-footer">
+        <nav>
+            <a href="https://ntnui.no/friidrett/"><img src="img/group_logo.png" alt="NTNUI Friidrett" width="192px"></a>
+        </nav>
+        <nav>
+            <a href="https://www.facebook.com/fjellseterlopet"><img src="img/socialmedia/facebook.svg" width="48x"/></a>
+            <a href="https://www.instagram.com/fjellseterlopet/"><img src="img/socialmedia/instagram.svg" width="48px"/></a>
+        </nav>
+    </div>
+    <script src="js/countdownTimer.js?1.0"></script>
+    <script>
+        function goHome() {
+            location.href = "https://www.fjellseterløpet.no"
+        }
+    </script>
+</body>
+</html>

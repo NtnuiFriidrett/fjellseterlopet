@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fjellseterløpet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <link href='https://fonts.googleapis.com/css?family=Exo+2:400,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="style/style.css">
+    <link rel="image_src" type="image/jpeg" href="path/icon-facebook.gif" />
+
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="menu">
+            <div class="ntnuiLogo">
+                <a href="https://www.ntnuifriidrett.org"><img src="res/ntnuiLogo.png" width="auto" height="30px" alt="NTNUI friidrett"></a>
+            </div>
+            <a href="#track">Løpet</a>
+            <a href="#practical">Praktisk</a>
+            <a href="#history">Historie</a>
+            <a href="#signup">Påmelding</a>
+            <a href="#results">Resultater</a>
+        </div>
+        <div class="fb-like no-mobile" data-href="https://www.facebook.com/fjellseterlopet" data-width="140" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
+    </header>
+
+    <div class="wrapper">
+
+        <div class="language-select">
+            <div class="dropdown dropdown-language no-mobile">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+            Language
+            <span class="caret"></span>
+          </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="index.html">Norsk</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="en.html">English</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container" id="pageTop">
+            <div class="container" id="logoContainer">
+                <a href="index.html"><img id="logo" alt="Fjellseterlopet" src="res/logoColor2.png" width="100%" height="auto"></a>
+            </div>
+
+            <div class="col-md-2 col-md-offset-2 buttonContainer"><a href="https://reg.eqtiming.no/?EventUID=35118"><button type="button" class="btn btn-success">Påmelding</button></a>
+                <p></p>
+            </div>
+            <div class="col-md-6 col-md-offset-1">
+                <h2>Under to måneder igjen!</h2>
+                <p>26. april starter løpesesongen.</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="fb-like-mobile-container">
+                <div class="fb-like" id="fb-like-mobile" data-href="https://www.facebook.com/fjellseterlopet" data-width="200" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
+                <div class="if-mobile"><a href="en.html" class="language-select-mobile">English</a></div>
+            </div>
+        </div>
+
+        <div id="track" class="container-fluid page pageDark">
+            <div class="col-md-5 col-md-offset-1 mapsContainer"><iframe src="https://mapsengine.google.com/map/u/0/embed?mid=zeXmig_5Tm48.k5rQSchmkOkg" width="100%" height="350" frameborder="0" style="border:0"></iframe>
+            </div>
+            <div class="col-md-5">
+                <h2>LØPET</h2>
+                <p>Fra start på gangvegen ved Lerkendal går løypa over Stavnebrua, deretter under jernbanelinja og noen meter langs Osloveien. Traseen tar så opp til venstre langs Mørlenda, under trikkelinja, gjennom rundkjøringa på Breidablikk og videre
+                    opp Breidablikkveien til Byåsen butikksenter. Derfra går løypa langs Fjellseterveien til målpassering ved Skistua. Løypa er 8,1 km lang og total stigning er rundt 420 meter.</p>
+                <p class="mapsLink">Se løpa på <a href="https://mapsengine.google.com/map/u/0/embed?mid=zeXmig_5Tm48.k5rQSchmkOkg">Google Maps</a>.</p>
+            </div>
+        </div>
+
+        <div id="practical" class="container-fluid page pageLight">
+            <div class="col-md-5 col-md-offset-1">
+                <h2>PRAKTISK INFO</h2>
+
+                <h3 class="indent">Henting av startnummer</h3>
+                <p class="indentp">Informasjon kommer.</p>
+
+                <!--<h3 class="indent">Etterpåmelding</h3>
+                <p class="indentp">Info kommer</p>-->
+
+                <h3 class="indent">Start</h3>
+                <p class="indentp">Startskuddet går ved Lerkendal 26.april kl 18:00. Møt opp før 17:45.</p>
+
+                <h3 class="indent">Klasser</h3>
+                <p class="indentp">Kvinner/menn: 12-13, 14-15, 16-17, 18-19, 20-22, 23-34, 35-39, 40-44 (deretter 5-årsklasser).</p>
+
+                <h3 class="indent">Bagasje</h3>
+                <p class="indentp">Sekk og bag kan leveres ved start for frakting opp til toppen.</p>
+
+                <h3 class="indent">Transport</h3>
+                <p class="indentp">Vi har busser som går fra toppen ned til Lerkendal.</p>
+
+                <h3 class="indent">Studenterhytta</h3>
+                <p class="indentp">Det er mulig å dra på studenterhytta etter løpet. Der kan man dusje og kjøpe seg noe godt.</p>
+
+                <!--<h3 class="indent">Mat</h3>
+                <p class="indentp">Det er mulig å bestille gryterett levert av Studenterhytta. Hvis du allerede er påmeldt kan du bestille det separat <a href="food.html">her</a>, helst før mandag. Det blir også litt bananer og noe sportsernæring fra <a href="https://vitagile.no">Vitagile</a>.
+                </p>-->
+
+                <h3 class="indent">Premier</h3>
+                <p class="indentp">Det blir premier til topp 3 beste mann/kvinne og til beste utøver i hver klasse. Mer informasjon kommer i etterkant av løpet.</p>
+
+                <!-- ETTER LØPET:
+            <h3>Resultater</h3>
+            <p class="indent">Resultatlistene er nå klare. Vi gikk gjennom video manuelt, siden laserne ikke fungerte. Send en mail på kontakt@fjellseterlopet.no dersom du har spørsmål rundt resultatene.</p>
+            <h3>Premier</h3>
+            <p class="indent">Premier kan hentes på idrettsbygget fra og med lørdag. De tre beste i hver klasse får premier. Vinnerne av instagramkonkurransen vil annonseres på vår <a href="https://www.facebook.com/fjellseterlopet">Facebook-side</a>.</p>
+            <h3>Spørsmål</h3>
+            -->
+                <p class="indent">Hvis du har spørsmål, send en melding til vår <a href="https://www.facebook.com/fjellseterlopet">Facebook-side</a> (rask respons) eller en mail til <a href="mailto:kontakt@fjellseterlopet.no">kontakt@fjellseterlopet.no</a>.</p>
+            </div>
+            <div class="col-md-5 img-container">
+                <img src="img/14100982151_b495c68b08_o.jpg" width="100%" height="auto">
+                <p>Foto: NTNUI friidrett</p>
+            </div>
+        </div>
+
+        <div id="pictures" class="container-fluid page pageGreen">
+            <div class="col-md-10 col-md-offset-1">
+                <h2>BILDER</h2>
+                <iframe class="facePhotos" src="//embedsocial.com/facebook_album/album_photos/1554132114903152" width="100%" height="500" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0"></iframe>
+            </div>
+        </div>
+
+        <div id="experience" class="container-fluid page pageLight">
+            <div class="col-md-5 col-md-offset-1">
+                <h2>FACEBOOK OG <span class="red">INSTAGRAM</span></h2>
+                <p>Del bilder fra oppkjøring til løpet med emneknaggen <strong><a href="https://www.instagram.com/explore/tags/fjellseterløpet/">#Fjellseterløpet</a></strong> på Instagram. Det blir konkurranse med premiering for beste bilde!</p>
+                <p>Husk også å like Fjellseterløpet på <a href="https://facebook.com/fjellseterlopet/">Facebook</a>, samt melde deg på <a href="https://www.facebook.com/events/1861537497416461/">arrangementet</a>.</p>
+                <!-- ETTER LØPET: <p>Vinnerne annonseres på vår <a href="https://www.facebook.com/fjellseterlopet">Facebook-side</a>.</p>
+            -->
+                <div class="fb-like" data-href="https://www.facebook.com/fjellseterlopet" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+            </div>
+            <div class="col-md-5  insta-container" style="overflow:hidden">
+                <!-- SnapWidget -->
+                <div id="IframeWrapper" style="position: relative;">
+                    <div id="iframeBlocker" style="position: absolute; top: 0; left: 0; width: 100%; height: 430px"></div>
+                    <iframe src="https://snapwidget.com/sl/?h=ZmplbGxzZXRlcmzDuHBldHxpbnw0MDB8M3wzfHx5ZXN8MjB8bm9uZXxvblN0YXJ0fHllc3xubw==&ve=190415" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; height:430px"></iframe>
+                </div>
+                <p>Instagram: #fjellseterløpet </p>
+            </div>
+        </div>
+
+        <div id="history" class="container-fluid page pageDark">
+            <div class="col-md-5 col-md-offset-1 img-container">
+                <img src="img/ND3_6602-Th.jpg" width="100%" height="auto">
+                <p>Foto: teambiathlon.no</p>
+            </div>
+            <div class="col-md-5 ">
+                <h2>LANG TRADISJON</h2>
+                <p>Løpet fra Lerkendal til Skistua har opprinnelig navnet Sigmonds Staup. Dette løpet har vært en tradisjon blant studentene i en årrekke, og blir fremdeles i en uformell form holdt i etterkant av NTNUIs generalforsamlinger. I 1987 ble Fjellseterløpet
+                    etablert som en oppfølger til det originale Staup, men med start ved Marienborg på vestsida av Nidelva. Distansen på 8,1 km var imidlertid den samme. Etter at Stavnebrua ble utvidet ble startstedet i 1996 flyttet til Lerkendal, på
+                    østsida av Nidelva, slik det er for Staup.</p>
+            </div>
+        </div>
+
+        <!--<div id="sponsors" class="container-fluid page pageLight">
+            <div class="col-md-5 col-md-offset-1">
+                <h2>SPONSORER</h2>
+                <p>Takket være våre sponsorer kan vi stille med flotte premier og gjennomføre et løp med høy kvalitet.</p>
+            </div>
+            <div class="col-md-5 sponsor-container">
+                <div class="sponsor-box">
+                    <a href="https://www.loplabbet.no/"><img alt="Løplabbet" src="res/loplabbet.png" width="100%" height="auto"></a>
+                </div>
+                <div class="sponsor-box">
+                    <a href="https://totallyd.no/new_page/"><img alt="TotalLyd" src="res/total_lyd_logo_text.png" width="100%" height="auto"></a>
+                </div>
+                <div class="sponsor-box">
+                    <a href="https://www.vitagile.no/"><img alt="Vitagile" src="res/vitagile-logo-2.svg" width="100%" height="auto"></a>
+                </div>
+            </div>
+        </div>-->
+
+        <div id="signup" class="container-fluid page pageGreen">
+            <div class="col-md-5 col-md-offset-1">
+                <h2>PÅMELDING</h2>
+                <p>Påmeldingen er nå klar!</p>
+                <!--<p>Det er mulig å melde seg på her frem til mandag 11. april. Etterpåmelding på løpsdagen koster 50 NOK ekstra, så meld deg på nå!</p>
+                <p>Studenterhytta leverer gryterett ved målstreken til de som bestiller det! De som allerede har meldt seg på, kan bestille mat <a href="food.html">her</a>.</p>
+                <p class="small_p"></p>
+                <p class="small_p">* Du trenger ikke PayPal-bruker for å betale. Prisen inkluderer engangslisens. De som har helårslisens kan få den tilbakebetalt <a href="https://response.questback.com/norgesfriidrettsforbund/tilbakebetalinglisens/">her</a></p>-->
+            </div>
+            <div class="col-md-5 ">
+              <p>Meld deg på via EQ Timing her: <a href="https://reg.eqtiming.no/?EventUID=35118">Påmelding</a></p>
+            </div>
+        </div>
+
+        <div id="results" class="container-fluid page pageLight">
+            <div class="col-md-5 col-md-offset-1">
+                <h2>RESULTATER</h2>
+                <p>Fjorårets resultater:</p>
+                <h3><a href="https://live.eqtiming.no/24972">Resultater 2016</a></h3>
+            </div>
+            <div class="col-md-5">
+                <p>Resultater fra tidligere år:</p>
+                <a href="../Resultater_Fjellseterløpet_2015.pdf">Resultater 2015</a>
+                <a href="https://www.ntnuifriidrett.org/wp-content/uploads/2014/05/FS-2014-Klasse.pdf">Resultater 2014</a>
+            </div>
+        </div>
+
+        <footer class="container-fluid">
+            <p class="col-md-2">NTNUI friidrett &copy;</p>
+            <p class="col-md-2 col-md-offset-8">Kontakt: kontakt@fjellseterlopet.no</p>
+        </footer>
+    </div>
+
+    <img alt="" src="res/background.png" id="background">
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="no-bm">
+<head>
+    <meta charset="UTF-8">
+    <title>Fjellseterløpet</title>
+    <link type="text/css" rel="stylesheet" href="style.css?1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="fsl-header">
+        <nav class="flex-start">
+            <a href="#home"><img src="img/logo.png" alt="NTNUI Friidrett" width="192px"></a>
+        </nav>
+            <nav class="flex-end">
+            <a class="hover-pointer"><img onClick=goHome() src="img/flags/no.svg" width="48px"/></a>
+            <a href="https://translate.google.com/translate?hl=no&sl=no&tl=en&u=fjellseterløpet.no"><img src="img/flags/gb.svg" width="48px"/></a>
+        </nav>
+        <div class="flex-center grid-span-two">
+            <nav class=" space-between limited-width">
+                <a href="#sponsors">Sponsorer</a>
+                <a href="#info">Informasjon</a>
+                <a href="#route">Ruten</a>
+                <a href="#history">Historie</a>
+                <a href="#results">Resultater</a>
+            </nav>
+
+        </div>
+    </div>
+    <main>
+        <section id="home">
+            <div class="flex-bottom border-box simple-padding">
+                <img class="limited-width border-box simple-padding" src="img/logo.png">
+            </div>
+            <div class="flex-center">
+                <div class="flex-center simple-padding flex-column-gaps">
+                    <h1 class="text-very-big no-margins">Fjellseterløpet 2022 er over.
+                        <br>
+                        Sees på startstreken i 2023!
+                    </h1>
+                    <a href="https://live.eqtiming.com/61082#result" class="full-width">
+                    <button class="full-width">
+                        Resultater Fjellseterløpet 2022
+                    </button>
+                    </a>
+                    <!--<div class="timeDisplayContainer">
+                        <div class="timeDisplayElement" id="daysDisplay"></div>
+                        <div class="timeDisplayElement" id="hoursDisplay"></div>
+                        <div class="timeDisplayElement" id="minutesDisplay"></div>
+                        <div class="timeDisplayElement" id="secondsDisplay"></div>
+                    </div>
+                    <a href="https://signup.eqtiming.com/?Event=fjellseter" class="full-width">
+                        <button class="full-width">
+                            Påmelding
+                            <br><span style="font-size: 0.75em">Earlybird-priser fram til 17.04.2022!</span>
+                        </button>
+                    </a>-->
+                </div>
+
+            </div>
+            <div class="flex-bottom">
+                <img class="limited-width"  src="img/background.svg"/>
+            </div>
+        </section>
+        <section id="sponsors" class="flex-center">
+            <div class="limited-width full-width">
+                <h1>Sponsorer</h1>
+                <div class="simple-margin background-white simple-padding bold flex-center">  
+                    <a href="https://www.vaernesekspressen.no/" style="width: 100%; max-width: 480px;"><img src="img/ve_logo.svg" style="width: 100%; max-width: 480px;"/></a>  
+                    <a href="https://www.unibuss.no/" style="width: 100%; max-width: 320px;"><img src="img/ue_logo.png" style="width: 100%; max-width: 320px;"/></a>    
+                    <p>Værnesekspressen har vært vår største sponsor i flere år og stiller med transport ned etterløpet.<br>Til vanlig kan du bestille transport til Trondheim lufthavn med dem på <a href="https://www.vaernesekspressen.no/">https://www.vaernesekspressen.no/</a></p>  
+                </div>
+            </div>
+        </section>
+        <section id="info" class="flex-center">
+            <div class="limited-width full-width">
+                <h1>Priser</h1>
+                <div class="simple-margin background-white simple-padding bold flex-center">
+                    <table class="full-width">
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <p>Barn</p>
+                                </td>
+                                <td>
+                                    <p>Student</p>
+                                </td>
+                                <td>
+                                    <p>Vanlig</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Vanlig Pris</p>
+                                </td>
+                                <td>
+                                    <p>150,-</p>
+                                </td>
+
+                                <td>
+                                    <p>200,-</p>
+                                </td>
+                                <td>
+                                    <p>300,-</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>På dagen</p>
+                                </td>
+                                <td>
+                                    <p>200,-</p>
+                                </td>
+                                <td>
+                                    <p>350,-</p>
+                                </td>
+                                <td>
+                                    <p>350,-</p>
+                                </td>
+                                <td>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h1>Praktisk Info</h1>
+                <div class="simple-margin background-white simple-padding bold">
+                    <h2>Henting av startnummer</h2>
+                    <p>Utdeling av startnummer vil skje ved Sentralbygg 1 på Gløshaugen mellom 09:30 og 18:00 den 29.04.2022</p>
+                    <h2>Start</h2>
+                    <p>Startskuddet går klokken 12:00 den 30. april 2022 ved Lerkendal stadion. Møt opp mellom 11 og 11:30 hvis ikke du har hentet startnummer enda.</p>
+                    <h2>Transport av bagasje</h2>
+                    <p>Mens du løper frakter vi bagasjen din opp til toppen.</p>
+                    <h2>Transport etter løpet</h2>
+                    <p>Værnesekspressen vil stå for transport ned etter fullført løp.</p>
+                    <h2>Resultater</h2>
+                    <p>Resultater vil bli tilgjenngelig her så raskt som mulig etter fullført løp.</p>
+                    <h2>Andre spørsmål</h2>
+                    <p>For svar på andre spørsmål ta kontakt på mail kontakt@fjellseterløpet.no</p>
+                </div>
+                <h1>Premier</h1>
+                <div class="simple-margin background-white simple-padding bold">
+                    <h2>1.-premier</h2>
+                    <p>2 stk tur/retur-billetter med Værnesekspressen<br>
+                    En toalettmappe sponset av Værnesekspressen<br>
+                    Midtby-gavekort på 500kr</p>
+                    <h2>2.-premier</h2>
+                    <p>Startnummer til valgfri distanse på Trondheim Maraton</p>
+                    <h2>3.-premier</h2>
+                    <p>Klippekort med 5 klipp på Grip Leangen</p>
+                    <h2>Klasse-premier</h2>
+                    <p>2 stk tur/return-billetter med Værnesekspressen</p>
+                    <h2>Uttrekkspremier</h2>
+                    <p>2 vinnere av 2 dagskort hver til Høyt og Lavt klatrepark</p>
+                    <p>2 vinnere av startnummer til valgfri distanse på Trondheim Maraton</p>
+                </div>
+            </div>
+        </section>
+        <section id="route" class="grid-two-split">
+            <div class="flex-center full-width">
+                <iframe class="flex-grow disable-google-zoom" src="https://mapsengine.google.com/map/u/0/embed?mid=zeXmig_5Tm48.k5rQSchmkOkg" width="100%" frameborder="0" style="border:0"></iframe>
+            </div>
+            <div class ="flex-center">
+                <div class="limited-width">
+                    <h1>Ruten</h1>
+                    <div class="simple-margin background-white simple-padding bold">
+                        <p>Fra start på gangvegen ved Lerkendal går løypa over Stavnebrua, deretter under jernbanelinja og noen meter langs Osloveien. Traseen tar så opp til venstre langs Mørlenda, under trikkelinja, gjennom rundkjøringa på Breidablikk og videre opp Breidablikkveien til Byåsen butikksenter. Derfra går løypa langs Fjellseterveien til målpassering ved Skistua. Løypa er 8,1 km lang og total stigning er rundt 420 meter.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="history" class="flex-center">
+
+                <div class="limited-width full-width">
+                    <h1>Løpets historie</h1>
+                    <div class="simple-margin background-white simple-padding bold">
+                        <p>Løpet fra Lerkendal til Skistua har opprinnelig navnet Sigmonds Staup. Dette løpet har vært en tradisjon blant studentene i en årrekke, og blir fremdeles i en uformell form holdt i etterkant av NTNUIs generalforsamlinger. I 1987 ble Fjellseterløpet etablert som en oppfølger til det originale Staup, men med start ved Marienborg på vestsida av Nidelva. Distansen på 8,1 km var imidlertid den samme. Etter at Stavnebrua ble utvidet ble startstedet i 1996 flyttet til Lerkendal, på østsida av Nidelva, slik det er for Staup.</p>
+                    </div>
+                </div> 
+
+        </section>
+        <section id="results" class="flex-center">
+            <div class="limited-width full-width">
+                <h1>Resultater</h1>
+                <div class="simple-margin background-white simple-padding bold flex-center">
+                    <a href="https://live.eqtiming.com/61082#result">
+                        <button class="full-width">
+                            Resultater Fjellseterløpet 2022
+                        </button>
+                    </a>
+                    <br>
+                    <h2>Tidligere Resultater</h2>
+                    <br>
+                    <div class="full-width" style="display: grid; grid-template-columns: repeat(auto-fit, minMax(260px, 1fr));">
+                        <a href="https://fjellseterlopet.no/resultater/Resultat%20Fjellseterl%C3%B8pet%202021.pdf">Resultater 2021 (virtuelt løp)</a>
+                        <a href="https://fjellseterlopet.no/resultater/Resultat_Fjellseterl%C3%B8pet_Solorun2020_(final).pdf">Resultater 2020 (virtuelt løp)</a>
+                        <a href="https://live.eqtiming.com/46485#result:172529-0-0-1-1-">Resultater 2019</a>
+                        <a href="https://live.eqtiming.com/40291">Resultater 2018</a>
+                        <a href="https://live.eqtiming.no/35118">Resultater 2017</a>
+                        <a href="https://live.eqtiming.no/24972">Resultater 2016</a>
+                        <a href="https://fjellseterlopet.no/resultater/Results_Fjellseterlopet2015-kopi.pdf">Resultater 2015</a>
+                        <a href="https://fjellseterlopet.no/resultater/Results_Fjellseterlopet2014-kopi.pdf">Resultater 2014</a>
+                        <a href="https://fjellseterlopet.no/resultater/Resultater_Fjellseterlopet2013-kopi.pdf">Resultater 2013</a>
+                        <a href="https://fjellseterlopet.no/resultater/Resultater%20Fjellseterl%C3%B8pet%202001.pdf">Resultater 2001</a>
+                        <a href="https://fjellseterlopet.no/resultater/Resultat%20Fjellseterl%C3%B8pet%202000.pdf">Resultater 2000</a>
+                        <a href="https://fjellseterlopet.no/resultater/Resultat%20Fjellseterl%C3%B8pet%201999.pdf">Resultater 1999</a>
+                        <a href="https://fjellseterlopet.no/resultater/Resultat%20Fjellseterl%C3%B8pet%201998.pdf">Resultater 1998</a>
+                        <a href="https://fjellseterlopet.no/resultater/Resultat%20Fjellseterl%C3%B8pet%201997.pdf">Resultater 1997</a>
+                        <a href="https://fjellseterlopet.no/resultater/Resultat%20Fjellseterl%C3%B8pet%201996%20(2).pdf">Resultater 1996</a>
+                        <a href="https://fjellseterlopet.no/resultater/Resultat%20Fjellseterl%C3%B8pet%201995.pdf">Resultater 1995</a>
+                        <a href="https://fjellseterlopet.no/resultater/Resultat%20Fjellseterl%C3%B8pet%201994.pdf">Resultater 1994</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--
+        <section id="results" class="flex-center">
+            <h1>Resultater</h1>
+            <div class="limited-width simple-margin background-white simple-padding bold full-width">
+                <h2></h2>
+                <div id="last-result">
+                    Her skal siste resultat være :O
+                </div>
+            </div>
+            <div class="limited-width simple-margin background-white simple-padding bold full-width">
+                <div id="last-result">
+                    Her skal siste resultat være :O
+                </div>
+            </div>
+        </section>
+        -->
+    </main>
+    <div id="fsl-footer">
+        <nav>
+            <a href="https://ntnui.no/friidrett/"><img src="img/group_logo.png" alt="NTNUI Friidrett" width="192px"></a>
+        </nav>
+        <nav>
+            <a href="https://www.facebook.com/fjellseterlopet"><img src="img/socialmedia/facebook.svg" width="48x"/></a>
+            <a href="https://www.instagram.com/fjellseterlopet/"><img src="img/socialmedia/instagram.svg" width="48px"/></a>
+        </nav>
+    </div>
+    <script src="js/countdownTimer.js?1.0"></script>
+    <script>
+        function goHome() {
+            location.href = "https://www.fjellseterløpet.no"
+        }
+    </script>
+</body>
+</html>
